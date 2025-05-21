@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 800px) {
+    .contLogo {
+        grid-column: span 5;
+    }
+
+    .contFormUp {
+        grid-column: span 5;
+    }
+}
+
+#root>div {
+    min-height: auto;
+}
+
+.peer:placeholder-shown~.peer-placeholder-shown\:text-blue-gray-500 {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+    transition-duration: 0.3s !important;
+}
+
+.hover\:text-light-blue-500:hover {
+    color: rgb(180 0 0) !important;
+}
+
+.checked\:bg-gray-900:checked {
+    background-color: rgb(180 0 0) !important;
+}
+
+.error,
+.divError>div>.peer:focus~.peer-focus\:leading-tight::after,
+.divError>div>.peer:focus~.peer-focus\:leading-tight::before,
+.divError>div>.before\:transition-all::before,
+.divError>div>.before\:transition-all::after,
+.divError>div>.text-gray-500,
+.error>div>div>div,
+.error>div {
+    color: rgb(255, 0, 0) !important;
+    border-color: rgb(255, 0, 0) !important;
+}
+
+.errorEmpty {
+    border-top-color: inherit !important;
+}
+
+.error>div>div>span {
+    background-color: red;
+}
+
+.error:focus,
+.error:not(:focus):not([value=""]) {
+    border-top-color: transparent !important;
+}
+
+.formRegUsu {
+    width: 800px;
+    height: auto;
+}
+
+.cardHeadCol {
+    color: white;
+    background-image: linear-gradient(to top right, rgb(120, 0, 0), rgb(180, 0, 0));
+    padding: 12px 16px;
+}
+
+.valCodRec {
+    color: white;
+    background-image: linear-gradient(to top right, rgb(0, 0, 0), rgb(80, 80, 80));
+    padding: 12px 16px;
+}
+
+.btnFunciones {
+    color: white !important;
+    width: 27px;
+    height: 27px;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.btnFunciones:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btnFunciones:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.btnGreen,
+.btnOrange,
+.btnRed,
+.btnBlue,
+.btnGray {
+    transition: 0.2s;
+    background-image: linear-gradient(to top right, rgb(0, 120, 0), rgb(0, 180, 0));
+    font-weight: 500;
+}
+
+.btnGreen:hover {
+    background-image: linear-gradient(to top right, rgb(0, 140, 0), rgb(0, 200, 0));
+}
+
+.btnGreen:active {
+    background-image: linear-gradient(to top right, rgb(0, 120, 0), rgb(0, 180, 0));
+}
+
+.btnOrange {
+    background-image: linear-gradient(to top right, rgb(255, 100, 0), rgb(255, 140, 0));
+}
+
+.btnOrange:hover {
+    background-image: linear-gradient(to top right, rgb(255, 120, 0), rgb(255, 160, 0));
+}
+
+.btnOrange:active {
+    background-image: linear-gradient(to top right, rgb(255, 100, 0), rgb(255, 140, 0));
+}
+
+.btnRed {
+    background-image: linear-gradient(to top right, rgb(140, 0, 0), rgb(200, 0, 0));
+}
+
+.btnRed:hover {
+    background-image: linear-gradient(to top right, rgb(160, 0, 0), rgb(220, 0, 0));
+}
+
+.btnRed:active {
+    background-image: linear-gradient(to top right, rgb(120, 0, 0), rgb(180, 0, 0));
+}
+
+.btnBlue {
+    background-image: linear-gradient(to top right, rgb(0, 0, 140), rgb(50, 50, 255));
+}
+
+.btnBlue:hover {
+    background-image: linear-gradient(to top right, rgb(0, 0, 160), rgb(70, 70, 255));
+}
+
+.btnBlue:active {
+    background-image: linear-gradient(to top right, rgb(0, 0, 120), rgb(50, 50, 180));
+}
+
+.btnGray {
+    background-image: linear-gradient(to top right, rgb(10, 10, 10), rgb(100, 100, 100));
+}
+
+.btnGray:hover {
+    background-image: linear-gradient(to top right, rgb(20, 20, 20), rgb(110, 110, 110));
+}
+
+.btnGray:active {
+    background-image: linear-gradient(to top right, rgb(0, 0, 0), rgb(90, 90, 90));
+}

@@ -1,0 +1,17 @@
+export * from "@/pages/dashboard/rols"
+export * from "@/pages/dashboard/usuarios"
+export * from "@/pages/dashboard/compras"
+export * from "@/pages/dashboard/insumos"
+export * from "@/pages/dashboard/proveedores"
+export * from "@/pages/dashboard/servicios"
+export * from "@/pages/dashboard/clientes"
+export * from "@/pages/dashboard/gestion_ventas"
+export * from "@/pages/dashboard/gastosoperativos"
+export * from "@/pages/dashboard/conceptogasto"
+export * from "@/pages/dashboard/empleados"
+export * from "@/pages/dashboard/agenda"
+export * from "@/pages/dashboard/ventas"
+export * from "@/pages/dashboard/profile"
+export * from "@/pages/dashboard/gestion_compras"
+
+

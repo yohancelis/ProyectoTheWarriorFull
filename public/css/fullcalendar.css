@@ -1,0 +1,93 @@
+:root {
+	--col1: linear-gradient(to top right, rgb(120, 0, 0), rgb(180, 0, 0));
+	--col2: linear-gradient(to top right, rgb(140, 0, 0), rgb(200, 0, 0));
+	--selDate: rgba(0, 0, 0, 0.05);
+	--event: rgb(255, 245, 245);
+	--eventDot: rgb(180, 0, 0);
+	--colT: rgb(255, 245, 245);
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+	box-shadow: rgba(76, 91, 106, 0.5) 0px 0px 0px 0;
+}
+
+.fc-toolbar-title {
+	text-transform: capitalize;
+}
+
+.fc .fc-button-primary,
+.fc .fc-button-primary:disabled {
+	background-image: var(--col1) !important;
+	border: 0;
+}
+
+.fc .fc-button-primary:hover {
+	background-image: var(--col2) !important;
+	border: 0;
+}
+
+.fc .fc-button-primary:active {
+	background-image: var(--col1) !important;
+	border: 0;
+}
+
+button.fc-timeGridDay-button.fc-button.fc-button-primary,
+button.fc-dayGridMonth-button.fc-button.fc-button-primary,
+button.fc-listWeek-button.fc-button.fc-button-primary,
+button.fc-dayGridWeek-button.fc-button.fc-button-primary {
+	border: 1px solid black;
+}
+
+.fc-button-active {
+	box-shadow: 0px 0px 5px white;
+	text-shadow: 1px 2px 5px red;
+}
+
+
+th.fc-col-header-cell,
+.fc-list-day-cushion.fc-cell-shaded {
+	background-image: var(--col1) !important;
+	color: white;
+}
+
+.invalid-date {
+	background-color: #f2f2f2;
+	color: #999999;
+	pointer-events: none;
+}
+
+.fc .fc-highlight {
+	background: var(--selDate);
+}
+
+.fc-day-today {
+	font-weight: bold;
+	color: rgb(200, 0, 0);
+	background: var(--colT) !important;
+}
+
+.fc .fc-list-event-dot {
+	border: 5px solid var(--eventDot);
+}
+
+.fc-v-event,
+.fc-h-event {
+	padding: 0 3px;
+	background-color: var(--event);
+	border: 1px solid black;
+	display: block;
+	color: black !important;
+}
+
+.fc-event-main {
+	display: flex;
+	align-items: center;
+}
+
+.fc-daygrid-event-harness>.fc-event>div>p,
+div>a>div>div>p,
+span#fc-dom-172 {
+	cursor: default;
+	color: black;
+}
